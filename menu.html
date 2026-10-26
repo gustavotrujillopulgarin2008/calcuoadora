@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Principal - Calculadora de Materiales</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- estructura principal de la pagina -->
+  <div class="contenedor">
+
+
+  <!-- barra de arriba con el titulo -->
+    <div class="topbar">
+      <div class="icon">🧱</div>
+      <span>Calculadora de<br>Materiales de Construcción</span>
+    </div>
+
+
+  <!-- tarjeta blanca del contenido -->
+    <div class="screen">
+
+      <!-- menu con las 7 opciones -->
+      <h2>Menú Principal</h2>
+      <div class="subtitle">Seleccione una opción</div>
+
+      <ul class="menu-list">
+        <li><a class="menu-link" href="muro.html"><span><span class="num">1.</span>Calcular muro de ladrillo</span><span>›</span></a></li>
+        <li><a class="menu-link" href="viga.html"><span><span class="num">2.</span>Calcular viga de hormigón</span><span>›</span></a></li>
+        <li><a class="menu-link" href="columna.html"><span><span class="num">3.</span>Calcular columnas de hormigón</span><span>›</span></a></li>
+        <li><a class="menu-link" href="contrapiso.html"><span><span class="num">4.</span>Calcular contrapisos</span><span>›</span></a></li>
+        <li><a class="menu-link" href="techo.html"><span><span class="num">5.</span>Calcular techo</span><span>›</span></a></li>
+        <li><a class="menu-link" href="pisos.html"><span><span class="num">6.</span>Calcular pisos</span><span>›</span></a></li>
+        <li><a class="menu-link" href="pintura.html"><span><span class="num">7.</span>Calcular pintura</span><span>›</span></a></li>
+
+        <!-- boton para salir -->
+        <li><button class="logout" onclick="hacerLogout()"><span><span class="num">8.</span>Salir</span><span>⏻</span></button></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

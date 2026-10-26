@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Calculadora de Materiales</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- estructura principal de la pagina -->
+  <div class="contenedor">
+
+
+  <!-- barra de arriba con el titulo -->
+    <div class="topbar">
+      <div class="icon">🧱</div>
+      <span>Calculadora de<br>Materiales de Construcción</span>
+    </div>
+
+
+  <!-- tarjeta blanca del contenido -->
+    <div class="screen">
+
+      <!-- formulario de login -->
+      <h2>Iniciar Sesión</h2>
+
+      <label>Nombre de usuario</label>
+      <input id="f-user" placeholder="Nombre de usuario">
+
+      <label>Contraseña</label>
+      <input id="f-pass" type="password" placeholder="Contraseña">
+
+
+      <!-- link para recuperar la contraseña -->
+      <button class="btn-link" style="margin-top:8px;text-align:right" onclick="window.location.href='recuperar.html'">¿Olvidaste tu contraseña?</button>
+
+
+      <div class="error" id="form-err"></div>
+
+
+      <!-- boton para entrar -->
+      <button class="btn-primary" onclick="hacerLogin()">Iniciar Sesión</button>
+
+
+      <!-- link para ir al registro -->
+      <button class="btn-link" onclick="window.location.href='registro.html'">¿No tienes cuenta? Regístrate</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

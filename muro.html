@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular Muro de Ladrillo - Calculadora de Materiales</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- estructura principal de la pagina -->
+  <div class="contenedor">
+
+
+  <!-- barra de arriba con el titulo -->
+    <div class="topbar">
+      <div class="icon">🧱</div>
+      <span>Calculadora de<br>Materiales de Construcción</span>
+    </div>
+
+
+  <!-- tarjeta blanca del contenido -->
+    <div class="screen">
+
+      <!-- formulario para calcular el muro -->
+      <h2>Calcular Muro de Ladrillo</h2>
+      <div class="subtitle">Ingrese los datos</div>
+
+
+      <label>1. Espesor del muro</label>
+      <!-- botones para elegir el espesor -->
+      <div class="toggle-row">
+        <button type="button" class="active" onclick="elegirEspesor(this, '20')">20 cm</button>
+        <button type="button" onclick="elegirEspesor(this, '30')">30 cm</button>
+      </div>
+
+      <input type="hidden" id="c-espesor" value="20">
+
+      <label>2. Largo del muro (m)</label>
+      <input id="c-largo" placeholder="Ej: 5.00">
+
+      <label>3. Alto del muro (m)</label>
+      <input id="c-alto" placeholder="Ej: 2.50">
+
+
+      <!-- aqui se muestra el error -->
+      <div class="error" id="form-err"></div>
+
+
+      <!-- boton para calcular -->
+      <button class="btn-primary" onclick="calcularMuro()">Calcular</button>
+
+
+      <!-- boton para volver -->
+      <a class="btn-link" href="menu.html">← Volver al menú</a>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

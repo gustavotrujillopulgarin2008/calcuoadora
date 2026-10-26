@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcular Contrapisos - Calculadora de Materiales</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- estructura principal de la pagina -->
+  <div class="contenedor">
+
+
+  <!-- barra de arriba con el titulo -->
+    <div class="topbar">
+      <div class="icon">🧱</div>
+      <span>Calculadora de<br>Materiales de Construcción</span>
+    </div>
+
+
+  <!-- tarjeta blanca del contenido -->
+    <div class="screen">
+
+      <!-- formulario para calcular el contrapiso -->
+      <h2>Calcular Contrapisos</h2>
+      <div class="subtitle">Ingrese los datos</div>
+
+      <label>1. Espesor (cm)</label>
+      <input id="c-espesor" placeholder="Ej: 5">
+
+      <label>2. Ancho (m)</label>
+      <input id="c-ancho" placeholder="Ej: 3.00">
+
+      <label>3. Largo (m)</label>
+      <input id="c-largo" placeholder="Ej: 4.00">
+
+
+      <!-- aqui se muestra el error -->
+      <div class="error" id="form-err"></div>
+
+
+      <!-- boton para calcular -->
+      <button class="btn-primary" onclick="calcularContrapiso()">Calcular</button>
+
+
+      <!-- boton para volver -->
+      <a class="btn-link" href="menu.html">← Volver al menú</a>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

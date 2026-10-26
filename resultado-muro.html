@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado Muro - Calculadora de Materiales</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- estructura principal de la pagina -->
+  <div class="contenedor">
+
+
+  <!-- barra de arriba con el titulo -->
+    <div class="topbar">
+      <div class="icon">🧱</div>
+      <span>Calculadora de<br>Materiales de Construcción</span>
+    </div>
+
+
+  <!-- tarjeta blanca del contenido -->
+    <div class="screen">
+
+
+      <!-- resultado del calculo -->
+      <div class="result-badge">✓</div>
+
+
+      <h2 id="res-titulo" style="text-align:center"></h2>
+
+
+      <!-- caja con el dato principal -->
+      <div class="result-box">
+        <div class="label" id="res-label"></div>
+        <div class="value" id="res-valor"></div>
+      </div>
+
+
+      <!-- aqui se llenan los materiales -->
+      <div id="res-materiales" class="materials"></div>
+
+
+      <!-- boton para calcular de nuevo -->
+      <a class="btn-secondary" href="muro.html">Calcular de nuevo</a>
+      <!-- boton para volver -->
+      <a class="btn-link" href="menu.html">← Volver al menú</a>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>cargarResultadoMuro();</script>
+</body>
+</html>
